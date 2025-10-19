@@ -1,0 +1,28 @@
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.bak
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# (these appear when the game compiles or caches packs)
+*.uuid.json
+*.manifest_cache
+*.json_backup
+*.zip
+*.mcpack
+*.mcaddon
+
+.vscode/
+.idea/
+*.code-workspace
+
+# Exclude output folders if you generate or copy builds
+dev_output/
+temp/
