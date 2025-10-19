@@ -1,4 +1,4 @@
-# vqktrCS's MCBE Compiler and Workspace Generator
+# vqktrCS`s MCBE Compiler and Workspace Generator
 A simple Python-based compiler that moves Resource Pack (RP) and Behavior Pack (BP) folders into Minecraft Bedrock’s development directories - perfect for bypassing Windows or Microsoft file-editing restrictions.
 
 # Why the compiler?
@@ -8,25 +8,25 @@ See this post: https://www.reddit.com/r/WindowsHelp/comments/1ezi870/the_organis
 
 # How to use?
 Run this command: 
-'git clone https://github.com/vqktrCS/mcbe_compiler'
+`git clone https://github.com/vqktrCS/mcbe_compiler`
 
-Edit the 'create_workspace.bat' if you intend to change the command line args for the 'generate_workspace.py' file. 
+Edit the `create_workspace.bat` if you intend to change the command line args for the `generate_workspace.py` file. 
 
-Run the batch file 'create_workspace.bat' to create your workspace
+Run the batch file `create_workspace.bat` to create your workspace
 
 or you can manually run this command:
-'py generate_workspace.py --name "Your Pack name" --desc "Your Pack description"'
+`py generate_workspace.py --name "Your Pack name" --desc "Your Pack description"`
 
 # How do I compile my mod?
 You can compile the mod by running this command on a terminal:
-'py compiler.py'
+`py compiler.py`
 
-or run the 'compile.workspace.bat' file to compile your addon without having to type the python command.
+or run the `compile.workspace.bat` file to compile your addon without having to type the python command.
 
 # Compiling the mod
 You have options to set a custom path which is good for test directories outside your main addon workspace.
 You also have the option to wipe the development_resource_packs and development_behavior_packs directory if you want a clean installation of your addon
 
-The compiler should automatically put your BP and RP folders in Minecraft's development directories.
+The compiler should automatically put your BP and RP folders in Minecraft`s development directories.
 
 Happy Modding Bedrock Community!
