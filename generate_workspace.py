@@ -58,7 +58,7 @@ def main():
     rp_path = os.path.join(base_dir, "RP")
     bp_path = os.path.join(base_dir, "BP")
 
-    print(f"\n⚙️ Generating workspace for '{args.name}'")
+    print(f"\nGenerating workspace for '{args.name}'")
     print(f"Target directory: {base_dir}\n")
 
     # Create manifests and link BP dependency to RP
@@ -70,4 +70,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
