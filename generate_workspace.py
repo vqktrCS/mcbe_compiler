@@ -39,7 +39,7 @@ def create_manifest(folder, pack_name, pack_type, description, dependency_uuid=N
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(manifest, f, indent=4)
 
-    print(f"✅ Created manifest.json for {pack_type}: {file_path}")
+    print(f"Created manifest.json for {pack_type}: {file_path}")
     return header_uuid
 
 
@@ -59,14 +59,15 @@ def main():
     bp_path = os.path.join(base_dir, "BP")
 
     print(f"\n⚙️ Generating workspace for '{args.name}'")
-    print(f"📂 Target directory: {base_dir}\n")
+    print(f"Target directory: {base_dir}\n")
 
     # Create manifests and link BP dependency to RP
     rp_uuid = create_manifest(rp_path, args.name, "RP", args.desc)
     create_manifest(bp_path, args.name, "BP", args.desc, dependency_uuid=rp_uuid)
 
-    print("\n✅ Workspace generation complete!")
-    print(f"📁 Created folders:\n - {rp_path}\n - {bp_path}")
+    print("\nWorkspace generation complete!")
+    print(f"Created folders:\n - {rp_path}\n - {bp_path}")
 
 if __name__ == "__main__":
     main()
+
