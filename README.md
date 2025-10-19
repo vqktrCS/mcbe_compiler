@@ -25,7 +25,7 @@ or run the `compile.workspace.bat` file to compile your addon without having to 
 
 # Compiling the mod
 You have options to set a custom path which is good for test directories outside your main addon workspace.
-You also have the option to wipe the `development_resource_packs` and `development_behavior_packs` directory if you want a clean installation of your addon
+You also have the option to wipe the `development_resource_packs` and `development_behavior_packs` directory if you want a clean installation of your addon. Note that you should probably move out any pre-existing addons inside the directory to avoid accidental file overrides or deletion.
 
 The compiler should automatically put your `BP` and `RP` folders in Minecraft`s development directories.
 
